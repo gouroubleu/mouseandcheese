@@ -1,0 +1,230 @@
+#app{
+
+    position:fixed;
+    top:0px; left: 0px; right:0px; bottom:0px;
+
+}
+
+textarea:focus, input:focus, button:focus {
+    outline: none;
+}
+
+div, input, label{
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+
+}
+
+#app>#content{
+
+
+
+}
+
+#app>#content>#draw{
+
+
+}
+
+#app>#iframe{
+
+    position:absolute;
+    top:100px;
+    left: 50px;
+    right:50px;
+    bottom:100px;
+
+}
+
+#app>#iframe>iframe {
+
+    width:100%;
+    height:100%;
+
+}
+
+#bottom {
+
+    position: absolute;
+    height:50px;
+    left: 0px; right: 0px; bottom: 0px;
+    background-color:#EEEEEE;
+
+}
+
+#bottom>#config{
+
+    position: absolute;
+    width:70%;
+    top:0px; left: 0px; bottom: 0px;
+
+}
+
+#bottom>#config>.formField {
+
+    width:16%;
+    height:100%;
+    float:left;
+    border-right:2px solid #000000;
+    
+}
+
+#bottom>#config>.formField>label {
+
+    width:100%;
+    height: 25px;
+    line-height:15px;
+    padding:5px;
+    display:block;
+
+}
+
+#bottom>#config>.formField>input {
+
+    width:100%;
+    height: 25px;
+    display:block;
+    border:none;
+    margin:0px;
+    text-align: center;
+
+}
+
+#bottom>#config>.formButtons {
+
+    width: 20%;
+    height:100%;
+    float: left;
+
+}
+
+#bottom>#config>.formButtons>button {
+
+    width:100%;
+    float:left;
+    height:100%;
+    cursor:pointer;
+    border:none;
+    background-color: #AAAAAA;
+    transition: background-color .1s ease-out, color .1s ease-out;
+    font-size:20px;
+
+}
+
+#bottom>#config>.formButtons>button:hover {
+
+    background-color: #333333;
+    color: #FFFFFF;
+
+}
+
+#bottom>#controller {
+
+    position: absolute;
+    width: 30%; 
+    top: 0px; right: 0px; bottom: 0px;
+    border-left:10px solid black;
+
+}
+
+#bottom>#controller>button {
+
+    width:50%;
+    float:left;
+    height:100%;
+    border:none;
+    background-color: #AAAAAA;
+    transition: background-color .1s ease-out, color .1s ease-out;
+    font-size:20px;
+
+}
+
+#bottom>#controller>button.active {
+
+    background-color: #007bff;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+#bottom>#controller>button.active:hover {
+
+    background-color: #333333;
+
+}
+
+#content{
+
+    position:absolute;
+    top:0px; left: 0px; right:0px; bottom:50px;
+    border-bottom:2px solid #000000;
+
+}
+
+#draw{
+
+    position:absolute;
+    top:50%; left:50%;
+    margin-top:0px;
+    margin-left:0px;
+    width:0px;
+    height:0px;
+    border:1px solid #000;
+    font-size:0px;
+    line-height:0px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+
+}
+
+.square{
+
+    float:left;
+    width:20px;
+    height:20px;
+    background-color:#1234AB;
+    transition: all .1s ease-out;
+    cursor:pointer;
+
+}
+
+.square.cursor {
+
+    background-color: blue;
+
+}
+
+.square.target {
+
+    background-color:purple;
+    border:1px solid yellow;
+
+}
+
+.square.finded {
+
+    background-color: pink;
+
+}
+
+.square.wall {
+
+    background-color:white;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+
+}
+
+.square.empty {
+
+    background-color: green;
+
+}
+
+.square.empty.already {
+
+    border:2px solid greenyellow;
+
+}

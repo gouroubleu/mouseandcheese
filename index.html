@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>MEESE</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="app">
+
+            <div id="content" >
+            
+                <div id="draw"></div>
+
+            </div>
+
+            <div id="bottom">
+
+                <div id="config">
+
+                    <div class="formField">
+                        <label>Width</label>
+                        <input 
+                            type='number' 
+                            name='size'
+                            value='20'
+                        />
+                    </div>
+
+                    <div class="formField">
+                        <label>Nb X</label>
+                        <input 
+                            type='number' 
+                            name='nbX'
+                            value='40'
+                        />
+                    </div>
+
+                    <div class="formField">
+                        <label>Nb Y</label>
+                        <input 
+                            type='number' 
+                            name='nbY'
+                            value='20'
+                        />
+                    </div>
+
+                    <div class="formField">
+                        <label>Walls</label>
+                        <input 
+                            type='number' 
+                            name='walls'
+                            value='40'
+                        />
+                    </div>
+
+                    <div class="formField">
+                        <label>Step</label>
+                        <input 
+                            type='number' 
+                            name='step'
+                            value='10'
+                        />
+                    </div>
+
+                    <div class="formButtons">
+                        <button type='submit'>Reset</button>
+                    </div>
+            
+                </div>
+
+                <div id="controller">
+
+                    <button id="stop">Stop</button>
+                    <button id="start">Start</button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
